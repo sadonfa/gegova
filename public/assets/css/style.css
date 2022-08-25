@@ -1,0 +1,665 @@
+/* INCLUIR FUENTES */
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat SemiBold';
+    src: url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat ExtraBold';
+    src: url('../fonts/Montserrat-ExtraBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Light';
+    src: url('../fonts/Montserrat-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat ExtraLight';
+    src: url('../fonts/Montserrat-ExtraLight.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat SemiBold';
+}
+
+body{
+    background-color: f6f7f9;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.principal {
+    background-image: url("../img/desarrollo-web-a-medida.png");
+    background-repeat: no-repeat;
+    background-size: 110%;
+    /* background-position:center; */
+    /* width: 100%; */    
+    /* padding: 50px; */
+    /* height: 100vh; */
+}
+
+.opac {
+    background-color: rgba(3, 29, 64, 0.6);
+    padding: 50px;
+    /* height: 100vh; */
+    width: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.men1,
+.men2 {
+    color: white;
+    font-family: "Montserrat SemiBold";
+    font-size: 20px;
+}
+
+.men1 ul,
+.men2 ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.men1 li,
+.men2 li {
+    text-decoration: none;
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.men1 li:hover,
+.men2 li:hover{
+    border-bottom: 2px solid #ffcc00;
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.men1 {
+    flex-grow: 1;
+}
+
+.logo img {
+    display: block;
+    width: 200px;
+    flex-grow: 2;
+}
+
+.men2 {
+    flex-grow: 1;
+}
+
+.ban h1 {
+    color: #ffcc00;
+    border-right: 2px solid #ffcc00;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    text-align: end;
+    align-items: center;
+    font-size: 55px;
+    font-family: "Montserrat ExtraBold";
+    /* line-height: 150px; */
+}
+
+.ban {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 110px;
+}
+
+.ban strong {
+    color: white;
+
+}
+
+.ban p {
+    display: block;
+    width: 250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    color: white;
+    /* border: 1px solid w; */
+    font-family: "Montserrat";
+    font-size: 24px;
+}
+
+.ban button {
+    margin-top: 15px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    border-radius: 7px;
+    color: #031d40;
+    background-color: #ffcc00;
+    font-size: 16px;
+    transition: all 500ms;
+}
+
+.ban button:hover{
+    background-color: #031d40;
+    color: #ffcc00;
+    cursor: pointer;
+    scale: 1.1;
+    box-shadow: 0px 0px 7px #ddd;
+}
+
+
+.redes {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    align-items: center;
+    margin: 0px auto;
+}
+
+.redes img {
+    width: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* ########### HEADER ########### */
+
+/* .header {
+    background-color: #031d40;
+    box-shadow: 0px 0px 6px #ddd;
+    font-size: 18px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .logo {
+    flex-grow: 2;
+    width: 234px;
+    margin-left: 50px;
+}
+
+
+.header nav {
+    flex-grow: 1;
+    margin-top: -12px;
+}
+
+.header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+ } 
+
+
+.header nav li {
+    margin-right: 30px;
+    list-style: none;
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-transform:none;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 6px #ddd; 
+}
+
+.header li a {
+    padding: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Montserrat";
+    transition: all 300ms;
+}
+
+.header ul li:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 0px 0px 6px #ffcc00; 
+}
+
+.header ul a:hover{
+    color: #ffcc00;
+} 
+
+.header .activado {
+    color: #ffcc00;
+    border-bottom: 1px solid #ffcc00;
+    box-shadow: 0px 0px 6px #ffcc00; 
+}
+   */
+
+/* ########### FIN HEADER ########### */
+
+/* ########### CONTENIDO ########### */
+
+.content{
+    min-height: 500px;
+    padding-top: 120px;
+}
+
+.page {
+    text-align: center;
+}
+
+.page h1 {
+    font-family: "Montserrat SemiBold";
+    font-size: 36px;
+}
+
+
+.banner {
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    /* filter: brightness(50%); */
+    /* position: relative;    */
+}
+
+
+#servicios {
+    background-color: #031d40;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+#servicios h1 {
+    font-family: 'Montserrat Extrabold';
+    font-size: 42px;
+    color: #ffcc00;
+}
+
+.service {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.service img {
+    display: block;
+    width: 100%;
+
+}
+
+.icono {
+    width: 50%;
+    border: 3px solid #ffcc00;
+    border-radius: 50% 50%;
+    margin: 10px auto;
+    padding: 30px;
+}
+
+.service h2 {
+    font-family: 'Montserrat Extrabold';
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.service p {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.web,
+.desing,
+.movil,
+.marketing {
+    width: 20%;
+    align-content: center;
+    font-size: 14px;
+    /* border: 1px solid #ffcc00; */
+}
+
+
+/* WORKTEAM */
+
+#workteam {
+    background-color: #ffcc00;
+    color: #031d40;
+    padding: 50px;
+}
+
+#workteam h1 {
+    text-align: center;
+    font-family: 'Montserrat Extrabold';
+    font-size: 42px;
+    margin-top: 30px;
+}
+
+#workteam p {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+}
+
+.foto {
+    border: 3px solid #031d40;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 50% 50%;
+    margin: 30px 0px;
+
+}
+
+.team img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 0px auto;
+    border-radius: 50% 50%;
+    filter: grayscale(1);
+}
+
+.team h2,
+.team h3 {
+    text-align: center;
+}
+
+.team h2 {
+    font-family: 'Montserrat Extrabold';
+    font-size: 24px;
+}
+
+
+/* CLIENTES */
+
+#client {
+    padding-bottom: 50px;
+}
+
+#client h1 {
+    font-family: 'Montserrat Extrabold';
+    text-align: center;
+    font-family: 'Montserrat Extrabold';
+    font-size: 42px;
+    margin-top: 30px;
+    color: #ffcc00;
+
+}
+
+.clientes {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.clientes img {
+    width: 10%;
+}
+
+
+/* ########### FIN CONTENIDO ########### */
+
+/* ########### FOOTER ########### */
+
+footer {
+    background-color: #031d40;
+    padding: 100px;
+    padding-bottom: 30px;
+}
+
+.logotipo {
+    display: block;
+    width: 82px;
+    margin: 0px auto;
+    margin-top: -150px;
+}
+
+.cont-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.contact {
+    width: 50%;
+}
+
+.contact h2 {
+    color: #ffcc00;
+    font-family: 'Montserrat Extrabold';
+    font-size: 22px;
+}
+
+.contact p {
+    color: white;
+    font-family: Montserrat;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+
+.redes {
+    display: flex;
+}
+
+.redes img {
+    width: 55px;
+    height: 55px;
+    margin-right: 35px;
+}
+
+/* ########### FIN FOOTER ########### */
+
+/* ########### PAGINA DE CONTACTOS ########### */
+
+.pag {
+    background-color: #ffcc00;
+}
+
+.pag nav a {
+    color: #031d40;
+}
+
+.pag ul li:hover {
+    border-top: 3px solid #031d40;
+}
+
+.pag-content {
+    display: flex;
+    padding: 50px;
+    padding-top: 130px;
+    padding-bottom: 100px;
+    justify-content: space-around;
+    /* background: url('../images/brunette-woman-typing-email-on-laptop-computer-while-sitting-at-home-selective-focus-on-hand.jpg'); */
+    /* background: linear-gradient(40deg, #031d40, rgba(0, 0, 0 ,0.0)); */
+    background: linear-gradient(to right, rgba(3, 29, 64, 0.9), rgba(255, 255, 255, 0)), url('../images/brunette-woman-typing-email-on-laptop-computer-while-sitting-at-home-selective-focus-on-hand.jpg');
+
+}
+
+.pag-contacto,
+.form-contact {
+    width: 40%;
+    padding-bottom: 35px;
+}
+
+.pag-contacto h1 {
+    color: #ffcc00;
+    font-size: 42px;
+    font-family: 'Montserrat Extrabold';
+    margin-bottom: 10px;
+}
+
+.pag-contacto p {
+    color: white;
+    font-family: Montserrat;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.pag-contacto img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.cont {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    /* border: 1px solid #ffcc00; */
+}
+
+.cont p {
+    padding-top: 5px;
+}
+
+.form-contact input[type=text],
+.form-contact input[type=tel],
+.form-contact input[type=mail] {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin: 15px;
+}
+
+.form-contact textarea {
+    width: 100%;
+    padding: 20px;
+    margin: 15px;
+}
+
+.form-contact input[type=submit] {
+    width: 100%;
+    padding: 30px;
+    background-color: #ffcc00;
+    color: #031d40;
+    font-family: 'Montserrat Extrabold';
+    font-size: 18px;
+
+}
+
+.pie {
+    background-color: #ffcc00;
+}
+
+.pie h2,
+.pie p,
+.pie a {
+    color: #031d40;
+}
+
+.pie ul li:hover {
+    border-top: 2px solid #031d40;
+}
+
+
+/* ########### FIN PAGINA DE CONTACTOS ########### */
+
+
+.quienes {
+    width: 100%;
+    position: absolute;
+    padding: 150px 100px;
+    margin: 0px auto;
+    /* background-image: url('../images/graphic-designer-sitting-at-desk.jpg');
+    background-repeat: no-repeat, repeat; */
+    /* padding: 100px; */
+
+
+}
+
+.quienes h1,
+.quienes p {
+    width: 70%;
+    color: white;
+}
+
+
+
+/* PAGINA DE ERROR 404 */
+
+.error {
+    text-align: center;
+    /* justify-content: center; */
+  }
+  
+  .error h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 80px;
+    /* text-transform: uppercase; */
+    color: #333;
+    text-shadow: 0px 0px 6px #777;
+    margin-bottom: 0px;
+  }
+  
+  .error p{
+    color: #444;
+    font-weight: lighter;
+    margin-top: 0px;
+    font-size: 26px;
+  }
+  
+  .error a {
+    display: block;
+    width: 15%;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #031d40;
+    background-color: #ffcc00;
+    border-radius: 7px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 45px;
+    transition: all 300ms;
+  }
+  
+  .error a:hover{
+    background-color: #ffcc00;
+    box-shadow: 0px 0px 15px #031d40;
+  }
+  
+  /* FINAL DE PAGINA DE ERROR 404 */
